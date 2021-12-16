@@ -176,6 +176,11 @@ ul {
   cursor: pointer;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #188ce8;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -275,7 +280,6 @@ ul {
 .port-card-block {
   background-color: #ffffff;
   width: 370px;
-  height: 404px;
   display: block;
 }
 
