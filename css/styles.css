@@ -338,8 +338,7 @@ ul {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 16px 32px 30px 32px;
+  justify-content: center;
 }
 .team-icon {
   width: 20px;
@@ -375,8 +374,8 @@ ul {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.footer-list-item:hover,
-.footer-list-item:focus-within {
+.footer-link:hover,
+.footer-link:focus {
   background-color: #2196f3;
 }
 
@@ -394,14 +393,9 @@ ul {
   width: 44px;
   height: 44px;
 }
-.team-list-item:hover,
-.team-list-item:focus-within {
-  background-color: #2196f3;
-  border-radius: 50%;
-}
-.team-list-item:hover .team-icon,
-.team-list-item:focus-within .team-icon {
-  fill: #fff;
+
+.team-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .team-link {
@@ -410,6 +404,17 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: #2196f3;
+}
+
+.team-link:hover .team-icon,
+.team-link:focus-within .team-icon {
+  fill: #fff;
 }
 
 .footer-link {
@@ -418,6 +423,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
 }
 .team-card-name {
   color: var(--primary-color);
@@ -439,10 +445,11 @@ ul {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 16px;
 }
 
 .team-card-text {
-  padding-top: 30px;
+  padding: 30px 32px;
 }
 
 .team-card {
@@ -588,8 +595,6 @@ ul {
   list-style: none;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
@@ -598,12 +603,14 @@ ul {
 .clients-icon {
   fill: #afb1b8;
 }
-.clients-list-item:hover {
+
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients-list-item:hover .clients-icon,
-.clients-list-item:focus-within .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
 
@@ -618,4 +625,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
