@@ -90,6 +90,7 @@ ul {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-section {
@@ -366,7 +367,6 @@ ul {
 }
 .footer-connect {
   margin-left: 70px;
-  margin-top: 12px;
 }
 .footer-list-item {
   width: 44px;
@@ -445,7 +445,7 @@ ul {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .team-card-text {
